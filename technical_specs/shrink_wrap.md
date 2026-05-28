@@ -19,7 +19,18 @@ Loại màng co cao cấp bằng nhiệt độ thích hợp (thường từ $130
 ### C. Màng co nhiệt PVC (Polyvinyl Chloride Heat-shrink Film)
 Loại màng co nhiệt giá thành rẻ, co tốt ở nhiệt độ thấp ($100^\circ C - 130^\circ C$).
 *   **Nguyên liệu:** Nhựa PVC kết hợp chất hóa dẻo.
-*   **Đặc tính:** Cứng, giòn, độ bóng cao nhưng dễ bị rách khi có vết xước nhỏ, mùi nồng khi co nhiệt. Ngày càng ít được sử dụng trong ngành thực phẩm do vấn đề an toàn sức khỏe nhưng vẫn dùng cho block sữa, nắp chai nước uống đóng chai.
+*   **Đặc tính:** Cứng, giòn, độ bóng cao nhưng dễ bị rách khi có vết xước nhỏ.
+
+### D. Màng bảo vệ bề mặt PE (PE Protective Film)
+Màng bảo vệ chống trầy xước tạm thời cho bề mặt kim loại, kính, nhôm, nhựa, inox.
+*   **Cấu tạo:** Màng nền PE nguyên sinh cán đùn tráng keo Acrylic dính cực nhẹ (Low-tack) để dễ lột bóc.
+*   **Đặc tính:** Không để lại vết keo sau khi bóc (Residue-free), dai chịu lực tốt, bảo vệ bề mặt nhẵn bóng trong quá trình gia công và vận chuyển.
+*   **Màu sắc:** Xanh dương (Blue), Trong suốt (Clear), Trắng đen (Black & White).
+
+### E. Xốp nổ / Xốp bong bóng khí (Bubble Wrap)
+Vật liệu bảo vệ giảm chấn chống va đập cho hàng hóa nhạy cảm.
+*   **Cấu tạo:** Hạt nhựa LDPE (Low Density Polyethylene) được tạo hình thành các bóng khí tròn chứa không khí.
+*   **Đặc tính:** Siêu nhẹ, êm, chịu lực nén cơ học tốt, cách nhiệt và chống ẩm tuyệt đối.
 
 ---
 
