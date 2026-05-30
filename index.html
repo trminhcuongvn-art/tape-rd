@@ -805,6 +805,25 @@
             cursor: pointer;
             padding: 0.5rem;
         }
+    
+        .eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: .12em; font-weight: 700; font-size: .78rem; }
+        .section-subtitle { color: var(--text-secondary); max-width: 880px; line-height: 1.7; margin-top: .75rem; }
+        .stats-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 1.5rem 0 2rem; }
+        .stat-card, .report-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 18px; padding: 1.4rem; box-shadow: var(--card-shadow); backdrop-filter: var(--glass-blur); }
+        .stat-card strong { display:block; font-size:1.4rem; margin:.3rem 0; }
+        .stat-label { color: var(--accent); font-weight:700; font-size:.82rem; text-transform:uppercase; letter-spacing:.08em; }
+        .warning .stat-label, .danger-card h2 { color: var(--warning); }
+        .report-grid.two-col { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap:1rem; margin:1rem 0; }
+        .report-card h2 { font-family:'Outfit',sans-serif; margin-bottom:.85rem; }
+        .rank-list { list-style:none; display:flex; flex-direction:column; gap:.65rem; }
+        .rank-list li { display:flex; justify-content:space-between; gap:1rem; padding:.75rem .9rem; border:1px solid var(--border-color); border-radius:12px; background:rgba(255,255,255,.03); }
+        .rank-list span { color: var(--success); font-weight:700; }
+        .clean-list { padding-left:1.1rem; color:var(--text-secondary); line-height:1.75; }
+        .note { color:var(--text-secondary); font-size:.92rem; margin-top:1rem; }
+        .danger-card { border-color: rgba(245,158,11,.35); background: linear-gradient(135deg, rgba(245,158,11,.12), var(--bg-card)); }
+        .source-card code { color: var(--success); }
+        @media (max-width: 900px) { .stats-grid, .report-grid.two-col { grid-template-columns: 1fr; } }
+
     </style>
 </head>
 <body>
@@ -840,6 +859,10 @@
             <div class="nav-item" onclick="switchSection('competitors')">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 7a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                 <span data-i18n="nav_competitors">Phân tích Đối thủ</span>
+            </div>
+            <div class="nav-item" onclick="switchSection('export-report')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15.3 15.3 0 0 1 0 20"></path><path d="M12 2a15.3 15.3 0 0 0 0 20"></path></svg>
+                <span>Export Report</span>
             </div>
             <div class="nav-item" onclick="switchSection('sourcing')">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
@@ -1322,6 +1345,80 @@
                 <!-- Rendered dynamically in Javascript -->
             </div>
         </section>
+    
+        <section id="section-export-report" class="content-section">
+            <div class="section-header">
+                <span class="eyebrow">Vietnam Export Intelligence</span>
+                <h1>Báo cáo xuất khẩu băng dính & màng PE stretch/shrink</h1>
+                <p class="section-subtitle">HS 3919 cho băng dính nhựa tự dính; HS 3920.10 / 392010 cho màng PE stretch/shrink. Bản trình bày tập trung vào thị trường ưu tiên, rủi ro phòng vệ thương mại và bước triển khai bán hàng.</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card"><span class="stat-label">HS 3919</span><strong>Adhesive tape</strong><p>BOPP/OPP tape, jumbo roll, self-adhesive plastic film.</p></div>
+                <div class="stat-card"><span class="stat-label">HS 392010</span><strong>PE film</strong><p>Stretch wrap, pallet wrap, shrink film nếu không tự dính/không composite.</p></div>
+                <div class="stat-card warning"><span class="stat-label">Risk</span><strong>Pakistan</strong><p>Anti-dumping investigation với BOPP jumbo roll từ Việt Nam.</p></div>
+            </div>
+
+            <div class="report-card">
+                <h2>Executive Summary</h2>
+                <p>Không nên gộp băng dính và màng co vào một nhóm. Hai sản phẩm có HS code, buyer profile và rủi ro khác nhau. HS 3919 có tín hiệu xuất khẩu rõ: OEC public snippets nêu top điểm đến gồm Hàn Quốc, Ấn Độ, Trung Quốc, Hoa Kỳ và Brazil. Màng PE stretch/shrink cần bóc riêng HS 392010 để tránh lẫn với các loại màng/tấm nhựa khác.</p>
+            </div>
+
+            <div class="report-grid two-col">
+                <div class="report-card">
+                    <h2>Top markets — HS 3919</h2>
+                    <ol class="rank-list">
+                        <li><strong>South Korea</strong><span>~USD 57.2M</span></li>
+                        <li><strong>India</strong><span>~USD 40.0M</span></li>
+                        <li><strong>China</strong><span>~USD 36.1M</span></li>
+                        <li><strong>United States</strong><span>~USD 19.4M</span></li>
+                        <li><strong>Brazil</strong><span>~USD 8.8M</span></li>
+                    </ol>
+                    <p class="note">Nguồn: OEC search snippet; cần xác nhận lại bằng Trade Map/UN Comtrade trước khi dùng cho quyết định lớn.</p>
+                </div>
+                <div class="report-card">
+                    <h2>Market logic — HS 392010</h2>
+                    <ul class="clean-list">
+                        <li><strong>Near markets:</strong> ASEAN, Nhật, Hàn, Trung Quốc, Đài Loan.</li>
+                        <li><strong>High-value markets:</strong> Mỹ, EU, Úc, Trung Đông.</li>
+                        <li><strong>Buyer profile:</strong> packaging distributors, warehouses, manufacturers, private-label importers.</li>
+                        <li><strong>Decision factor:</strong> real net film weight, micron stability, puncture resistance, cling/stretch ratio.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="report-card danger-card">
+                <h2>Trade Remedy Alert</h2>
+                <p>Pakistan đã khởi xướng điều tra chống bán phá giá đối với băng dính tự dính BOPP dạng jumbo roll từ Việt Nam, mã HS Pakistan 3919.9010 và 3919.9090. Không nên ưu tiên Pakistan cho BOPP jumbo roll nếu chưa có rà soát pháp lý và cost sheet đầy đủ.</p>
+            </div>
+
+            <div class="report-grid two-col">
+                <div class="report-card">
+                    <h2>Sales Pack cần chuẩn bị</h2>
+                    <ul class="clean-list">
+                        <li>English catalog + product photos.</li>
+                        <li>TDS/COA/MSDS nếu có keo/phụ gia.</li>
+                        <li>MOQ, lead time, FOB/CIF quotation template.</li>
+                        <li>Sample policy và packaging/loading photos.</li>
+                    </ul>
+                </div>
+                <div class="report-card">
+                    <h2>Next 7 days</h2>
+                    <ul class="clean-list">
+                        <li>Chốt spec sản phẩm và HS 8/10 số theo thị trường.</li>
+                        <li>Kéo Trade Map/UN Comtrade: HS 3919 + 392010, 2021–2024.</li>
+                        <li>Lập 100 buyer đầu tiên: 50 cho tape, 50 cho PE film.</li>
+                        <li>Chuẩn hóa email outreach + sample offer.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="report-card source-card">
+                <h2>Full markdown report</h2>
+                <p>File chi tiết nằm tại <code>market_research/export_report_vietnam_adhesive_tape_stretch_film.md</code>.</p>
+            </div>
+        </section>
+
     </main>
 
     <script>
